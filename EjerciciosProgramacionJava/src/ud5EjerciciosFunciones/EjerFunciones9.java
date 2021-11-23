@@ -7,7 +7,6 @@
 package ud5EjerciciosFunciones;
 
 import java.util.Scanner;
-import static ud5.EjerFunciones3.minimo;
 
 /**
  *
