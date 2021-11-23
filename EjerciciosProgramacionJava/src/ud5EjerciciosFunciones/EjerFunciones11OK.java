@@ -1,5 +1,5 @@
 /*
- * Proyecto UD5 - Archivo EjerFunciones11.java - Companía DAW
+ * Proyecto UD5 - Archivo EjerFunciones11OK.java - Companía DAW
  * Licencia Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
@@ -18,12 +18,11 @@ import java.util.Scanner;
 teclado. Para ello implementa una función que reciba como parámetro un número entero
 y muestre por pantalla la tabla de multiplicar de dicho número.
 */
-public class EjerFunciones11 {
-    public static String multiplicador(int num) {
-        
-        for (int i = 0; i <= 10; i++) {
-            int mult = i * num;
-            System.out.println(i + " x " + num + ": " + mult);
+public class EjerFunciones11OK {
+    public static void tabla_multiplicar(int num) {
+        System.out.println("Tabla de multiplicar del " + num);
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + (num*i));
         }
     }
     
@@ -33,7 +32,6 @@ public class EjerFunciones11 {
         
         System.out.print("Escribe el número: ");
         num = in.nextInt();
-        
-        System.out.println(multiplicador(num));
+        tabla_multiplicar(num);
     }
 }
