@@ -1,3 +1,5 @@
+package ud4EjerciciosVectores;
+
 
 import java.util.Scanner;
 
@@ -19,7 +21,7 @@ array, y luego lo recorra para averiguar el máximo y mínimo y mostrarlos por p
 public class Ejer3Vect {
     public static void main(String[] args) {
         double[] vec = new double[10];
-        dou
+        
         
         Scanner lector = new Scanner(System.in);
 
