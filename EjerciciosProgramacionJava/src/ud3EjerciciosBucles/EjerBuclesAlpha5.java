@@ -3,7 +3,7 @@
  * piden al usuario) en orden inverso y en pasos de 2. Por ejemplo, si A=20 y B=-10,
  * entonces mostrará 20, 18, 16... hasta -10
  */
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
 
 import java.util.Scanner;
 

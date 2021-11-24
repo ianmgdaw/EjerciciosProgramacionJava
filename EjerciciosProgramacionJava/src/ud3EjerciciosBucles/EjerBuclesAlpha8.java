@@ -2,7 +2,7 @@
  8. Escribe un programa que muestre por pantalla la multiplicación de todos los números
 desde 1 hasta 10.
  */
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
 
 /**
  *

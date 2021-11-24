@@ -1,4 +1,4 @@
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
 
 /*
 1. Escribe un programa que muestre los números enteros del 1 al 10. Luego modifícalo

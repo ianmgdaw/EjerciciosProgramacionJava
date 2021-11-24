@@ -2,7 +2,7 @@
  * 2. Escribe un programa que muestre los números enteros de A a B (valores que se le
  * piden al usuario).
  */
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
 
 import java.util.Scanner;
 

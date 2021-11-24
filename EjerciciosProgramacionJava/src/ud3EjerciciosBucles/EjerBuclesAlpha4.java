@@ -3,7 +3,7 @@
  * piden   al   usuario)   en   orden   inverso.   Es   decir,   debe   empezar   por   B   (el   mayor)   y
  * terminar por A (el menor).
  */
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
 
 import java.util.Scanner;
 

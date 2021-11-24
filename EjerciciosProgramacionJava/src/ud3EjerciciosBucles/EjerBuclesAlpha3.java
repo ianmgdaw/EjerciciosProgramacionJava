@@ -3,7 +3,7 @@
  * piden al usuario) en pasos de dos. Por ejemplo, si A=5 y B=21, entonces mostraría 5,
  * 7, 9, 11... hasta 21.
  */
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
 
 import java.util.Scanner;
 

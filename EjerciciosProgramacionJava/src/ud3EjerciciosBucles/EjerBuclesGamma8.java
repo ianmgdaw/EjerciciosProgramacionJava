@@ -4,7 +4,8 @@
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
 
-package EjerciciosBucles;
+package ud3EjerciciosBucles;
+
 
 import java.util.Scanner;
 
