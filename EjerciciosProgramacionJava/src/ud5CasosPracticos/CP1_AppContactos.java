@@ -1,9 +1,9 @@
 /*
- * Proyecto EjerciciosProgramacionJava - Archivo AppContactos.java - Companía DAW
+ * Proyecto EjerciciosProgramacionJava - Archivo CP1_AppContactos.java - Companía DAW
  * Licencia Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
-package ud5CasoPractico1;
+package ud5CasosPracticos;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.0
  * @date 25 nov. 2021 11:48:57
  */
-public class AppContactos {
+public class CP1_AppContactos {
 
     public static int MAX = 100; // Nº maximo de contactos
     public static int cuantos = 0; //Números de contactos existes 

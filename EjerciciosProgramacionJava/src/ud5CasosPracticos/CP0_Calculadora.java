@@ -1,9 +1,9 @@
 /*
- * Proyecto EjerciciosProgramacionJava - Archivo Calculadora.java - Companía DAW
+ * Proyecto EjerciciosProgramacionJava - Archivo CP0_Calculadora.java - Companía DAW
  * Licencia Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
-package ud5CasoPractico0;
+package ud5CasosPracticos;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.0
  * @date 23 nov. 2021 17:59:54
  */
-public class Calculadora {
+public class CP0_Calculadora {
 
     // Muestra el menú, pide al usuario valor rango 1-9 y devuelve la opción elegida. =======================
     public static int muestraMenu() {

@@ -1,9 +1,9 @@
 /*
- * Proyecto EjerciciosProgramacionJava - Archivo CuentaBancaria.java - Companía DAW
+ * Proyecto EjerciciosProgramacionJava - Archivo CP2_CuentaBancaria.java - Companía DAW
  * Licencia Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
-package ud5CasoPractico2;
+package ud5CasosPracticos;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.0
  * @date 26 nov. 2021 12:43:28
  */
-public class CuentaBancaria {
+public class CP2_CuentaBancaria {
 
     // Mostrar el menú================================================================
     public static int menu() {
