@@ -45,10 +45,10 @@ public class CuentasBancarias {
 
             switch (opcion) {
                 case 1: // VER CUENTAS
-                    System.out.println("");
-                    System.out.println("LISTA DE CUENTAS");
-                    System.out.println("");
                     if (cuentas > 0) {
+                        System.out.println("");
+                        System.out.println("LISTA DE CUENTAS");
+                        System.out.println("");
                         for (int i = 0; i < cuentas; i++) {
                             System.out.println(i + ". " + nombres[i] + "  Saldo: " + saldos[i] + " €");
                         }
@@ -60,20 +60,32 @@ public class CuentasBancarias {
                     }
                     break;
                 case 2: // INGRESAR DINERO
-                    System.out.println("");
-                    System.out.print("¿Qúe cuenta para ingresar?: ");
-                    int cuentaIngreso = lector.nextInt();
-                    System.out.print("La cantidad a ingresar: ");
-                    double ingreso = lector.nextDouble();
-                    saldos[cuentaIngreso] += ingreso;
+                    if (cuentas > 0) {
+                        System.out.println("");
+                        System.out.print("¿Qúe cuenta para ingresar?: ");
+                        int cuentaIngreso = lector.nextInt();
+                        System.out.print("La cantidad a ingresar: ");
+                        double ingreso = lector.nextDouble();
+                        saldos[cuentaIngreso] += ingreso;
+                    } else {
+                        System.out.println("");
+                        System.out.println("No hay cuentas");
+                        System.out.println("");
+                    }
                     break;
                 case 3: // RETIRAR DINERO
-                    System.out.println("");
-                    System.out.print("¿Qúe cuenta para retirar?: ");
-                    int cuentaRetiro = lector.nextInt();
-                    System.out.print("La cantidad a retirar: ");
-                    double retiro = lector.nextDouble();
-                    saldos[cuentaRetiro] = (saldos[cuentaRetiro]) - (retiro);
+                    if (cuentas > 0) {
+                        System.out.println("");
+                        System.out.print("¿Qúe cuenta para retirar?: ");
+                        int cuentaRetiro = lector.nextInt();
+                        System.out.print("La cantidad a retirar: ");
+                        double retiro = lector.nextDouble();
+                        saldos[cuentaRetiro] = (saldos[cuentaRetiro]) - (retiro);
+                    } else {
+                        System.out.println("");
+                        System.out.println("No hay cuentas");
+                        System.out.println("");
+                    }
                     break;
                 case 4: // AGREGAR CUENTA
                     if (cuentas < MAX) {
@@ -91,42 +103,59 @@ public class CuentasBancarias {
                     }
                     break;
                 case 5: // ELIMINAR CUENTA
-                    System.out.println("");
-                    System.out.print("¿Qué cuenta quieres eliminar?: ");
-                    int borrar = lector.nextInt();
-                    for (int i = borrar + 1; i < cuentas; i++) {
-                        nombres[i - 1] = nombres[i];
-                        saldos[i - 1] = saldos[i];
+                    if (cuentas > 0) {
+                        System.out.println("");
+                        System.out.print("¿Qué cuenta quieres eliminar?: ");
+                        int borrar = lector.nextInt();
+                        for (int i = borrar + 1; i < cuentas; i++) {
+                            nombres[i - 1] = nombres[i];
+                            saldos[i - 1] = saldos[i];
+                        }
+                        cuentas--;
+                    } else {
+                        System.out.println("");
+                        System.out.println("No hay cuentas");
+                        System.out.println("");
                     }
-                    cuentas--;
                     break;
                 case 6: // BUSCAR CUENTA
-                	System.out.println("");
-                	lector.nextLine();
-                	System.out.print("Escribe un nombre: ");
-                	String busca = lector.nextLine();
-                	busca = busca.toLowerCase();
-                	
-                	for (int i = 0; i < cuentas; i++) {
-                		String nombre = nombres[i];
-                		nombre = nombre.toLowerCase();
-                		int N = nombre.indexOf(busca);
-                		if (N != -1) {
-                			System.out.println(i + ". " + nombres[i] + "  Saldo: " + saldos[i] + " €");
-						}
-					}
-           
-                	break;
-                case 7: // MOSTRAR MOROSOS
-                    System.out.println("");
-                    System.out.println("LISTA DE MOROSOS");
-                    System.out.println("");
-                    for (int i = 0; i < cuentas; i++) {
-                        if (saldos[i] < 0) {
-                            System.out.println(i + ". " + nombres[i] + "  Saldo: " + saldos[i] + " €");
+                    if (cuentas > 0) {
+                        System.out.println("");
+                        lector.nextLine();
+                        System.out.print("Escribe un nombre: ");
+                        String busca = lector.nextLine();
+                        busca = busca.toLowerCase();
+
+                        for (int i = 0; i < cuentas; i++) {
+                            String nombre = nombres[i];
+                            nombre = nombre.toLowerCase();
+                            int N = nombre.indexOf(busca);
+                            if (N != -1) {
+                                System.out.println(i + ". " + nombres[i] + "  Saldo: " + saldos[i] + " €");
+                            }
                         }
+                    } else {
+                        System.out.println("");
+                        System.out.println("No hay cuentas");
+                        System.out.println("");
                     }
-                    System.out.println("");
+                    break;
+                case 7: // MOSTRAR MOROSOS
+                    if (cuentas > 0) {
+                        System.out.println("");
+                        System.out.println("LISTA DE MOROSOS");
+                        System.out.println("");
+                        for (int i = 0; i < cuentas; i++) {
+                            if (saldos[i] < 0) {
+                                System.out.println(i + ". " + nombres[i] + "  Saldo: " + saldos[i] + " €");
+                            }
+                        }
+                        System.out.println("");
+                    } else {
+                        System.out.println("");
+                        System.out.println("No hay cuentas");
+                        System.out.println("");
+                    }
                     break;
                 case 8: // SALIR
                     salir = true;
