@@ -16,36 +16,25 @@ import java.util.Scanner;
 public class MainPersona {
 
     public static void main(String[] args) {
+
         Scanner lector = new Scanner(System.in);
 
-        Persona p1 = new Persona();
+        String n, a, d;
+        int e;
 
         System.out.println("Persona 1");
         System.out.print("Nombre: ");
-        p1.nombre = lector.nextLine();
+        n = lector.nextLine();
         System.out.print("Apellidos: ");
-        p1.apellidos = lector.nextLine();
+        a = lector.nextLine();
         System.out.print("Edad: ");
-        p1.edad = lector.nextInt();
+        e = lector.nextInt();
         lector.nextLine();
         System.out.print("DNI: ");
-        p1.dni = lector.nextLine();
+        d = lector.nextLine();
 
-        Persona p2 = new Persona();
+        Persona p1 = new Persona(d, n, a, e);
 
-        System.out.println("");
-        System.out.println("Persona 2");
-        System.out.print("Nombre: ");
-        p2.nombre = lector.nextLine();
-        System.out.print("Apellidos: ");
-        p2.apellidos = lector.nextLine();
-        System.out.print("Edad: ");
-        p2.edad = lector.nextInt();
-        lector.nextLine();
-        System.out.print("DNI: ");
-        p2.dni = lector.nextLine();
-
-        System.out.println(p1.nombre + " " + p1.apellidos + " con DNI " + p1.dni + " " + p1.imprimirSiEsMayorEdad());
-        System.out.println(p2.nombre + " " + p2.apellidos + " con DNI " + p2.dni + " " + p2.imprimirSiEsMayorEdad());
+        System.out.println(p1.getNombre() + " " + p1.getApellidos() + " con DNI " + p1.getEdad() + " " + p1.imprimirSiEsMayorEdad());
     }
 }

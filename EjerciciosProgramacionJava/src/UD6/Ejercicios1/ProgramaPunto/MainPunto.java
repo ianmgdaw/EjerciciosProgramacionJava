@@ -15,22 +15,25 @@ package UD6.Ejercicios1.ProgramaPunto;
 public class MainPunto {
     public static void main(String[] args) {
         
-        Punto p1 = new Punto();
-        p1.x = 5;
-        p1.y = 0;
-        
-        Punto p2 = new Punto();
-        p2.x = 10;
-        p2.y = 10;
-        
-        Punto p3 = new Punto();
-        p3.x = -3;
-        p3.y = 7;
+        Punto p1 = new Punto(5,0);
+        Punto p2 = new Punto(10,10);
+        Punto p3 = new Punto(-3,7);
         
         System.out.println("Punto 1: " + p1.imprimirCoordenadas());
         System.out.println("Punto 2: " + p2.imprimirCoordenadas());
         System.out.println("Punto 3: " + p3.imprimirCoordenadas());
         
+        p1.setX(50);
+        p1.setY(20);
+        p2.setX(20);
+        p2.setY(3);
+        p3.setX(-10);
+        p3.setY(8);
+
+        System.out.println("");
+        System.out.println("Punto 1: " + p1.imprimirCoordenadas());
+        System.out.println("Punto 2: " + p2.imprimirCoordenadas());
+        System.out.println("Punto 3: " + p3.imprimirCoordenadas());
         
     }
             

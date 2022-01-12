@@ -13,11 +13,36 @@ package UD6.Ejercicios1.ProgramaPersona;
  */
 public class Persona {
 
-    public String dni;
-    public String nombre;
-    public String apellidos;
-    public int edad;
+    private String dni, nombre, apellidos;
+    private int edad;
 
+    public Persona(String dni, String nombre, String apellidos, int edad) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+    }
+
+    public String getDni(){
+        return dni;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public String getApellidos() {
+        return apellidos;
+    }
+    
+    public int getEdad() {
+        return edad;
+    }
+    
+    //public String setDni(String dni) {
+        
+    //}
+    
     public String imprimirSiEsMayorEdad() {
         if (edad >= 18) {
             return "es mayor de edad.";
