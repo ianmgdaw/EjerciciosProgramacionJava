@@ -17,13 +17,24 @@ public class Articulo {
     public double precio;
     public int iva;
     public int cuantosQuedan;
-    public double pvp;
+    public double pvp, ivaEnEuros;
     
-    public double pvp(){
-        pvp = ((iva/100) * precio) + precio;
-        return pvp;
+    //CONSTRUCTOR
+    public Articulo(String nombre, double precio, int iva, int cuantosQuedan){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.iva = iva;
+        this.cuantosQuedan = cuantosQuedan;
     }
     
+    
+       
+    //METODOS
+    public double pvp(){
+        ivaEnEuros = ((precio * iva) / 100);
+        pvp = precio + ivaEnEuros;
+        return pvp;
+    }
     
     public String imprimirArticulo(){
         return nombre + " - Precio:" + precio + "€ - IVA:" + iva + "% - PVP:" + pvp() + "€";

@@ -36,5 +36,10 @@ public class MainPersona {
         Persona p1 = new Persona(d, n, a, e);
 
         System.out.println(p1.getNombre() + " " + p1.getApellidos() + " con DNI " + p1.getEdad() + " " + p1.imprimirSiEsMayorEdad());
+
+        p1.setEdad(20);
+
+        System.out.println(p1.getNombre() + " " + p1.getApellidos() + " con DNI " + p1.getEdad() + " " + p1.imprimirSiEsMayorEdad());
+
     }
 }
