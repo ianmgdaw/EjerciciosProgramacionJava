@@ -15,6 +15,20 @@ package UD6.Ejercicios1.ProgramaArticulo;
 public class Articulo {
     public String nombre;
     public double precio;
-    public int iva = 21;
+    public int iva;
     public int cuantosQuedan;
+    public double pvp;
+    
+    public double pvp(){
+        pvp = ((iva/100) * precio) + precio;
+        return pvp;
+    }
+    
+    
+    public String imprimirArticulo(){
+        return nombre + " - Precio:" + precio + "€ - IVA:" + iva + "% - PVP:" + pvp() + "€";
+    }
+    
+    
+    
 }

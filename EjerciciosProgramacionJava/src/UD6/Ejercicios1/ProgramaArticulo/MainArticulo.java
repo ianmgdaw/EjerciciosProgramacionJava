@@ -15,7 +15,14 @@ package UD6.Ejercicios1.ProgramaArticulo;
 public class MainArticulo {
     public static void main(String[] args) {
         
+        Articulo art1 = new Articulo();
         
+        art1.nombre = "TV";
+        art1.precio = 100;
+        art1.iva = 21;
+        art1.cuantosQuedan = 10;
+        
+        System.out.println(art1.imprimirArticulo());
         
     }
 }
