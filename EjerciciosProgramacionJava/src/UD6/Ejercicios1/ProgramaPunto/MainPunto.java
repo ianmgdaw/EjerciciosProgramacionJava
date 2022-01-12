@@ -27,9 +27,9 @@ public class MainPunto {
         p3.x = -3;
         p3.y = 7;
         
-        System.out.println("Punto 1: " + p1.x + " " + p1.y);
-        System.out.println("Punto 2: " + p2.x + " " + p2.y);
-        System.out.println("Punto 3: " + p3.x + " " + p3.y);
+        System.out.println("Punto 1: " + p1.imprimirCoordenadas());
+        System.out.println("Punto 2: " + p2.imprimirCoordenadas());
+        System.out.println("Punto 3: " + p3.imprimirCoordenadas());
         
         
     }

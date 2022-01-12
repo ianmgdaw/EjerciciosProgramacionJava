@@ -17,5 +17,10 @@ public class Punto {
     public int x;
     public int y;
     
+    public String imprimirCoordenadas() {
+        //System.out.println("(" + x + "," + y + ")");
+        return "(" + x + "," + y + ")";
+    }
+            
 }
 

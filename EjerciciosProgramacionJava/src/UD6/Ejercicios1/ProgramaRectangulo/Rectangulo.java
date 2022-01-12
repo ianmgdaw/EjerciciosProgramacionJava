@@ -19,7 +19,25 @@ public class Rectangulo {
     public int y2;
     
     
-    public void imprimirCoordenadas() {
-        System.out.println("(" + x1 + "," + y1 + ")(" + x2 + "," + y2 + ")");
+    public String imprimirCoordenadas() {
+        return "(" + x1 + "," + y1 + ")(" + x2 + "," + y2 + ")";
     }
+    
+    public int perimetro() {
+        int ancho = Math.abs(x2-x1);
+        int alto = Math.abs(y2-y2);
+        int perimetro = (ancho + alto) * 2;
+        return perimetro;
+    }
+    
+    public int area(){
+        int ancho = Math.abs((x2-x1));
+        int alto  = Math.abs((y2-y1));
+        int area = ancho * alto;
+        return area;
+    }
+    
+    
+    
+    
 }

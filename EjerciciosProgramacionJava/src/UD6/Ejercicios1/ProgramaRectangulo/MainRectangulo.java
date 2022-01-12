@@ -27,8 +27,13 @@ public class MainRectangulo {
         r2.x2 = 2;
         r2.y2 = 3;
         
-        r1.imprimirCoordenadas();
-        r2.imprimirCoordenadas();
+        System.out.println("Coordenadas rectángulo 1: " + r1.imprimirCoordenadas());
+        System.out.println("Perímetro: " + r1.perimetro());
+        System.out.println("Area: " + r1.area());
+        System.out.println("");
+        System.out.println("Coordenadas rectángulo 2: " + r2.imprimirCoordenadas());
+        System.out.println("Perímetro: " + r2.perimetro());
+        System.out.println("Area: " + r2.area());
         
     }
 }
