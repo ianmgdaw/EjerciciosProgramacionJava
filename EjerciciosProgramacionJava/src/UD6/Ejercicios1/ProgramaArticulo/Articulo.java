@@ -13,11 +13,14 @@ package UD6.Ejercicios1.ProgramaArticulo;
  * @date 10 ene. 2022 21:34:28
  */
 public class Articulo {
-    public String nombre;
-    public double precio;
-    public int iva;
-    public int cuantosQuedan;
-    public double pvp, ivaEnEuros;
+    
+    private String nombre;
+    private double precio;
+    private int iva;
+    private int cuantosQuedan;
+    private double pvp, ivaEnEuros;
+    
+    
     
     //CONSTRUCTOR
     public Articulo(String nombre, double precio, int iva, int cuantosQuedan){
@@ -27,17 +30,65 @@ public class Articulo {
         this.cuantosQuedan = cuantosQuedan;
     }
     
+    //GETTERS
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public double getPrecio(){
+        return precio;
+    } 
+    
+    public int getIva(){
+        return iva;
+    }
+    
+    public int getCuantosQuedan(){
+        return cuantosQuedan;
+    }
+    
+
+    
+    //SETTERS
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public void setPrecio(double precio){
+        if (precio > 0) {
+            this.precio = precio;
+        } else
+            System.err.println("ERROR: Precio");
+    }
+    
+    public void setIva(int iva){
+        if (iva > 0) {
+            this.iva = iva;
+        } else
+            System.err.println("ERROR: IVA");
+    }
+    
+    public void setCuantosQuedan(int cuantosQuedan) {
+        if (cuantosQuedan < 0) {
+            this.cuantosQuedan = cuantosQuedan;
+        } else
+            System.err.println("ERROR: Cuantos quedan");
+    }
     
        
     //METODOS
-    public double pvp(){
+    public double getPVP(){
         ivaEnEuros = ((precio * iva) / 100);
         pvp = precio + ivaEnEuros;
         return pvp;
     }
     
-    public String imprimirArticulo(){
-        return nombre + " - Precio:" + precio + "€ - IVA:" + iva + "% - PVP:" + pvp() + "€";
+    public double getPVPDescuento(int d){
+        
+    }
+    
+    public String imprime(){
+        return nombre + " - Precio:" + precio + "€ - IVA:" + iva + "% - PVP:" + getPVP() + "€";
     }
     
     

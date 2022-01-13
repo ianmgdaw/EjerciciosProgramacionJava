@@ -15,25 +15,17 @@ public class MainRectangulo {
 
     public static void main(String[] args) {
 
-        Rectangulo r1 = new Rectangulo(2, 2, 5, 5);
+        Rectangulo r1 = new Rectangulo(0,0,5,5);
 
-        System.out.println("Coordenadas rectángulo 1: " + r1.imprimirCoordenadas());
-        System.out.println("Perímetro: " + r1.perimetro());
-        System.out.println("Area: " + r1.area());
-        System.out.println("");
+        //r1.imprimir();
+        //r1.setX1Y1(2,3);
+        //r1.setX2Y2(5,10);
         
-        r1.setX1(10);
-
-        System.out.println("Coordenadas rectángulo 1: " + r1.imprimirCoordenadas());
-        System.out.println("Perímetro: " + r1.perimetro());
-        System.out.println("Area: " + r1.area());
-        System.out.println("");
+        r1.imprimir();
         
-        /*Rectangulo r2 = new Rectangulo(1, 3, 2, 4);
+        r1.setAll(0,0,5,4);
+        
+        r1.imprimir();
 
-        System.out.println("Coordenadas rectángulo 2: " + r2.imprimirCoordenadas());
-        System.out.println("Perímetro: " + r2.perimetro());
-        System.out.println("Area: " + r2.area());
-        */
     }
 }

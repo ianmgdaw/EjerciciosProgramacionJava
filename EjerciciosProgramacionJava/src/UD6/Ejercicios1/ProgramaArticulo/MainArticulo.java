@@ -3,7 +3,6 @@
  * Licencia Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
-
 package UD6.Ejercicios1.ProgramaArticulo;
 
 /**
@@ -13,17 +12,29 @@ package UD6.Ejercicios1.ProgramaArticulo;
  * @date 10 ene. 2022 21:34:40
  */
 public class MainArticulo {
+
     public static void main(String[] args) {
+
+        Articulo art1 = new Articulo("TV", 100, 21, 10);
+
+        //System.out.println(art1.imprimirArticulo());
         
-        Articulo art1 = new Articulo("TV",100,21,10);
+        System.out.println(art1.getNombre() + " - Precio:" + art1.getPrecio() + "€ - IVA:" + art1.getIva() + "% - PVP:" + art1.pvp() + "€");
+        System.out.println("");
         
-        /*
-        art1.nombre = "TV";
-        art1.precio = 100;
-        art1.iva = 21;
-        art1.cuantosQuedan = 10;*/
         
-        System.out.println(art1.imprimirArticulo());
+        
+        art1.setNombre("TV Xiaomi");
+        art1.setIva(10);
+        art1.setPrecio(200);
+        System.out.println(art1.getNombre() + " - Precio:" + art1.getPrecio() + "€ - IVA:" + art1.getIva() + "% - PVP:" + art1.pvp() + "€");
+        
+        
+        
+        
+        
+        
+        
         
     }
 }

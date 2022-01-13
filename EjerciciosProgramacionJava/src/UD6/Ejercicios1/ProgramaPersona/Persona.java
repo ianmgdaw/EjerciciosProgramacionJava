@@ -22,7 +22,8 @@ public class Persona {
         this.apellidos = apellidos;
         this.edad = edad;
     }
-
+    
+    // GETTERS ==============================================
     public String getDni(){
         return dni;
     }
@@ -39,6 +40,7 @@ public class Persona {
         return edad;
     }
     
+    // SETTERS ===============================================
     public void setDni(String dni) {
         this.dni = dni;
     }
@@ -56,6 +58,7 @@ public class Persona {
     }
     
     
+    //METODOS ==============================================
     
     public String imprimirSiEsMayorEdad() {
         if (edad >= 18) {
@@ -64,5 +67,21 @@ public class Persona {
             return "no es mayor de edad.";
         }
     }
+    
+    public void imprime() {
+        System.out.println(getNombre() + " " + getApellidos() + " con DNI " + getEdad() + " " + imprimirSiEsMayorEdad());
+    }
+    
+    public boolean esMayorEdad() {
+        return edad >= 18;
+    }
+    
+    public boolean esJubilado() {
+        return edad >= 65;
+    }
+    
+    //public int diferenciaEdad(Persona p) {
+
+    //}
 
 }

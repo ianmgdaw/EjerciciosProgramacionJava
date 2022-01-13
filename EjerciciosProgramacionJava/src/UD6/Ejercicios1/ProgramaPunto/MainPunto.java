@@ -19,22 +19,27 @@ public class MainPunto {
         Punto p2 = new Punto(10,10);
         Punto p3 = new Punto(-3,7);
         
-        System.out.println("Punto 1: " + p1.imprimirCoordenadas());
-        System.out.println("Punto 2: " + p2.imprimirCoordenadas());
-        System.out.println("Punto 3: " + p3.imprimirCoordenadas());
+        p1.imprime();
+        p2.imprime();
+        p3.imprime();
         
+        /*
         p1.setX(50);
         p1.setY(20);
         p2.setX(20);
         p2.setY(3);
         p3.setX(-10);
         p3.setY(8);
-
-        System.out.println("");
-        System.out.println("Punto 1: " + p1.imprimirCoordenadas());
-        System.out.println("Punto 2: " + p2.imprimirCoordenadas());
-        System.out.println("Punto 3: " + p3.imprimirCoordenadas());
+        */
         
+        p1.setXY(20, 30);
+        p2.desplaza(2,2);
+        p3.desplaza(3,3);
+        
+        System.out.println("");
+        p1.imprime();
+        p2.imprime();
+        p3.imprime();
     }
             
     

@@ -37,10 +37,31 @@ public class Punto {
         this.y = y;
     }
     
-    public String imprimirCoordenadas() {
-        //System.out.println("(" + x + "," + y + ")");
-        return "(" + x + "," + y + ")";
+    
+    //METODOS =====================================================
+    
+    public void imprime() {
+        System.out.println("(" + x + "," + y + ")");
     }
-            
+    
+    
+    public void setXY(int x, int y) {
+        setX(x);
+        setY(y);
+    }
+    
+    
+    public void desplaza(int dx, int dy) {
+        this.x += dx;
+        this.y += dy;
+    }
+    
+    /*
+    public int distancia(int p) {
+        return Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    }
+    */
+    
+    
 }
 
