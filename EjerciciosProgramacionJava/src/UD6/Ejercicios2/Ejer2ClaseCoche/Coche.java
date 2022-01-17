@@ -99,6 +99,7 @@ public class Coche {
         System.out.println("Tipo de coche: " + getTipoCoche());
         System.out.println("Año de fabricación: " + getAnyoFabricacion());
         System.out.println("Modalidad del seguro: " + getModalidadSeguro());
+        System.out.println("");
     }
 
 }

@@ -15,9 +15,9 @@ public class MainCoche {
 
     public static void main(String[] args) {
 
-        Coche coche1 = new Coche("C4", "Gris", true, "9835 JKP", TipoCoche.UTILITARIO, 2020, ModalidadSeguro.TODO_RIESGO);
-        Coche coche2 = new Coche("Golf", "Negro", true, "5219 HGT", TipoCoche.UTILITARIO, 2018, ModalidadSeguro.TERCEROS);
-        Coche coche3 = new Coche("Leon", "Rojo", false, "1536 GNH", TipoCoche.FAMILIAR, 2017, ModalidadSeguro.TODO_RIESGO);
+        Coche coche1 = new Coche("C4", "Gris", true, "9835 JKP", Coche.TipoCoche.UTILITARIO, 2020, Coche.ModalidadSeguro.TODO_RIESGO);
+        Coche coche2 = new Coche("Golf", "Negro", true, "5219 HGT", Coche.TipoCoche.UTILITARIO, 2018, Coche.ModalidadSeguro.TERCEROS);
+        Coche coche3 = new Coche("Leon", "Rojo", false, "1536 GNH", Coche.TipoCoche.FAMILIAR, 2017, Coche.ModalidadSeguro.TODO_RIESGO);
 
         coche1.imprimir();
         coche2.imprimir();
