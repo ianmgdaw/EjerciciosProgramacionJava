@@ -13,4 +13,30 @@ package UD6.Ejercicios2.Ejer5ClaseDNI;
  */
 public class DNI {
 
+    private int dni;
+
+    //SETTERS
+    public void setDNI(int dni) {
+        this.dni = dni;
+    }
+
+    //GETTERS
+    public int getDNI() {
+        return dni;
+    }
+
+    public char getLetra() {
+        char[] letra = new char[]{'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+        return letra[dni % 23];
+    }
+
+    public String getNIF() {
+        return Integer.toString(getDNI()) + getLetra();
+    }
+
+    //METODOS
+    public void imprime() {
+        System.out.println(getNIF());
+    }
+
 }
