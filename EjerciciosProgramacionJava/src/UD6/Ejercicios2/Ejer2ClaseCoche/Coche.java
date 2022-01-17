@@ -12,25 +12,27 @@ package UD6.Ejercicios2.Ejer2ClaseCoche;
  * @date 16 ene. 2022 17:23:04
  */
 public class Coche {
+    
+    public enum TipoCoche {MINI, UTILITARIO, FAMILIAR, DEPORTIVO}
 
+    public enum ModalidadSeguro {TERCEROS, TODO_RIESGO}
+    
     private String modelo, color, matricula;
     private boolean metalizada;
     private int anyoFabricacion;
-    private tipoCoche tipoCoche;
-    private modalidadSeguro modalidadSeguro;
+    private TipoCoche tipo;
+    private ModalidadSeguro modalidad;
 
-    public enum tipoCoche {MINI, UTILITARIO, FAMILIAR, DEPORTIVO}
+    
 
-    public enum modalidadSeguro {TERCEROS, TODO_RIESGO}
-
-    public Coche(String modelo, String color, boolean metalizada, String matricula, tipoCoche tipoCoche, int anyoFabricacion, modalidadSeguro modalidadSeguro) {
+    public Coche(String modelo, String color, boolean metalizada, String matricula, TipoCoche tipo, int anyoFabricacion, ModalidadSeguro modalidad) {
         this.modelo = modelo;
         this.color = color;
         this.metalizada = metalizada;
         this.matricula = matricula;
-        this.tipoCoche = tipoCoche;
+        this.tipo = tipo;
         this.anyoFabricacion = anyoFabricacion;
-        this.modalidadSeguro = modalidadSeguro;
+        this.modalidad = modalidad;
     }
 
     public String getModelo() {
@@ -49,16 +51,16 @@ public class Coche {
         return matricula;
     }
 
-    public tipoCoche getTipoCoche() {
-        return tipoCoche;
+    public TipoCoche getTipoCoche() {
+        return tipo;
     }
 
     public int getAnyoFabricacion() {
         return anyoFabricacion;
     }
 
-    public modalidadSeguro getModalidadSeguro() {
-        return modalidadSeguro;
+    public ModalidadSeguro getModalidadSeguro() {
+        return modalidad;
     }
 
     public void setModelo(String modelo) {
@@ -77,16 +79,16 @@ public class Coche {
         this.matricula = matricula;
     }
 
-    public void setTipoCoche(tipoCoche tipoCoche) {
-        this.tipoCoche = tipoCoche;
+    public void setTipoCoche(TipoCoche tipo) {
+        this.tipo = tipo;
     }
 
     public void setAnyoFabricacion(int anyoFabricacion) {
         this.anyoFabricacion = anyoFabricacion;
     }
 
-    public void setModalidadSeguro(modalidadSeguro modalidadSeguro) {
-        this.modalidadSeguro = modalidadSeguro;
+    public void setModalidadSeguro(ModalidadSeguro modalidad) {
+        this.modalidad = modalidad;
     }
 
     public void imprimir() {
