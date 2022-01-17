@@ -90,7 +90,7 @@ public class Coche {
     public void setModalidadSeguro(ModalidadSeguro modalidad) {
         this.modalidad = modalidad;
     }
-
+    
     public void imprimir() {
         System.out.println("Modelo: " + getModelo());
         System.out.println("Color: " + getColor());
