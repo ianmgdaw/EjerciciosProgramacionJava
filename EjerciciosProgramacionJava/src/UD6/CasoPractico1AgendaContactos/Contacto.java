@@ -14,50 +14,50 @@ package UD6.CasoPractico1AgendaContactos;
  */
 public class Contacto {
     
+    //ATRIBUTOS
     private String nombre, telefono, correo;
-    
+
     //CONSTRUCTOR
-    public Contacto(String nombre, String telefono, String correo){
+    public Contacto(String nombre, String telefono, String correo) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
     }
-    
-    
+
     //GETTERS / SETTERS
     public String getNombre() {
         return nombre;
     }
-    
+
     public String getTelefono() {
         return telefono;
     }
-    
+
     public String getCorreo() {
         return correo;
     }
-    
-    public void setNombre() {
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    public void setTelefono() {
+
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-   
-    public void setCorreo() {
+
+    public void setCorreo(String correo) {
         this.correo = correo;
     }
-    
+
     //METODOS
     
-    public void imprimir(){
-        System.out.println("Nombre: " + nombre + "   Telefono: " + telefono + "   Correo: " + correo);
+    // Imprime la información del contacto
+    public void imprimir() {
+        System.out.println(getAll());
     }
     
-    public void getAll() {
-        getNombre();
-        getTelefono();
-        getCorreo();
+    // Devuelve un String con la información del contacto
+    public String getAll() {
+        return (nombre + " " + telefono + " " + correo);
     }
 }
