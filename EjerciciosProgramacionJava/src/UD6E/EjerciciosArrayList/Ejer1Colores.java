@@ -3,7 +3,7 @@
  * Licencia Creative Commons BY-NC-SA 4.0
  * https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
-package UD6.EjerciciosArrayList;
+package UD6E.EjerciciosArrayList;
 
 import java.util.ArrayList;
 
